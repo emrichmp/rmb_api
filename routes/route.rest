@@ -9,17 +9,21 @@ POST http://localhost:5000/bootcamps
 Content-Type: application/json
 
 {
-    "name": "Bitch"
+    "name": "FlatIron School",
+    "yearEstablished": 2012,
+    "programType": "All 3",
+    "programLength": 30,
+    "averageRating": 10
 }
 
 ###
 
-DELETE http://localhost:5000/bootcamps/6114879914a7ae5cac664231
+DELETE http://localhost:5000/bootcamps/611593dbe5dc081223b03456
 
 ###
-PATCH http://localhost:5000/bootcamps/6114874a14a7ae5cac66422d
+PATCH http://localhost:5000/bootcamps/6115983d624dc813c431a56f
 Content-Type: application/json
 
 {
-    "name": "Fuck"
+    "averageRating": 5
 }

@@ -5,10 +5,25 @@ const bootcampSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    date: {
-        type: Date,
+    yearEstablished: {
+        type: Number,
+        required: true
+    },
+    programType: {
+        //part time, full time, self taught
+        type: String,
+        required: true
+    },
+    programLength: {
+        //in weeks
+        type: Number,
+        required: true
+    },
+    averageRating: {
+        //out of 10
+        type: Number,
         required: true,
-        default: Date.now
+        default: 0
     }
 })
 

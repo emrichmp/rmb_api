@@ -20,7 +20,10 @@ router.get('/:id', getBootcamp, (req, res) => {
 router.post('/', async (req, res) => {
     const bootcamp = new Bootcamp({
         name: req.body.name,
-        date: req.body.date
+        yearEstablished: req.body.yearEstablished,
+        programType: req.body.programType,
+        programLength: req.body.programLength,
+        averageRating: req.body.averageRating
     })
     try {
         const newBootcamp = await bootcamp.save()
