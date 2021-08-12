@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Bootcamp = require('../models/bootcamp')
 
-//Get all
+//Get all - X
 router.get('/', async (req, res) => {
     //res.send('Hello')
     try {
@@ -12,11 +12,11 @@ router.get('/', async (req, res) => {
         res.status(500).json({ message: err.message })
     }
 })
-//Get one
+//Get one - X
 router.get('/:id', getBootcamp, (req, res) => {
     res.send(res.bootcamp)
 })
-//Create one
+//Create one - X
 router.post('/', async (req, res) => {
     const bootcamp = new Bootcamp({
         name: req.body.name,
@@ -47,7 +47,7 @@ router.patch('/:id', getBootcamp, async (req, res) => {
         res.status(400).json({ message: err.message})
     }
 })
-//Delete one
+//Delete one - X
 router.delete('/:id', getBootcamp, async (req, res) => {
     try {
         await res.bootcamp.remove()

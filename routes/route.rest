@@ -2,7 +2,7 @@ GET http://localhost:5000/bootcamps
 
 ###
 
-GET http://localhost:5000/bootcamps/6114879914a7ae5cac664231
+GET http://localhost:5000/bootcamps/6115983d624dc813c431a56f
 
 ###
 POST http://localhost:5000/bootcamps
@@ -18,7 +18,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5000/bootcamps/611593dbe5dc081223b03456
+DELETE http://localhost:5000/bootcamps/6115983d624dc813c431a56f
 
 ###
 PATCH http://localhost:5000/bootcamps/6115983d624dc813c431a56f
