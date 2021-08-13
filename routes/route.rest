@@ -2,7 +2,7 @@ GET http://localhost:5000/bootcamps
 
 ###
 
-GET http://localhost:5000/bootcamps/6115983d624dc813c431a56f
+GET http://localhost:5000/bootcamps/6115dbdbc6d9591fd536f60d
 
 ###
 POST http://localhost:5000/bootcamps
@@ -19,12 +19,12 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5000/bootcamps/6115d7919271f81d9c3a1ee5
+DELETE http://localhost:5000/bootcamps/6115dbdbc6d9591fd536f60d
 
 ###
-PATCH http://localhost:5000/bootcamps/6115d7919271f81d9c3a1ee5
+PATCH http://localhost:5000/bootcamps/6115dbdbc6d9591fd536f60d
 Content-Type: application/json
 
 {
-    "averageRating": 10
+    "averageRating": 8
 }
