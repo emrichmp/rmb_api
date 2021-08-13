@@ -13,12 +13,13 @@ Content-Type: application/json
     "yearEstablished": 2012,
     "programType": "All 3",
     "programLength": 30,
+    "courseOfferings": ["Software Engineering", "Data Science", "Cyber Security"],
     "averageRating": 10
 }
 
 ###
 
-DELETE http://localhost:5000/bootcamps/6115983d624dc813c431a56f
+DELETE http://localhost:5000/bootcamps/6115d7919271f81d9c3a1ee5
 
 ###
 PATCH http://localhost:5000/bootcamps/6115d7919271f81d9c3a1ee5

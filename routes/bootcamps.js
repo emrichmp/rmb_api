@@ -23,6 +23,7 @@ router.post('/', async (req, res) => {
         yearEstablished: req.body.yearEstablished,
         programType: req.body.programType,
         programLength: req.body.programLength,
+        courseOfferings: req.body.courseOfferings,
         averageRating: req.body.averageRating
     })
     try {
@@ -45,6 +46,9 @@ router.patch('/:id', getBootcamp, async (req, res) => {
     }
     if (req.body.programLength != null) {
         res.bootcamp.programLength = req.body.programLength
+    }
+    if (req.body.courseOfferings != null) {
+        res.bootcamp.courseOfferings = req.body.courseOfferings
     }
     if (req.body.averageRating != null) {
         res.bootcamp.averageRating = req.body.averageRating
