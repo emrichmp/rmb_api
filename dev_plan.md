@@ -5,5 +5,5 @@
 
 ## To do
 [X] - make update route work
-[] - impliment user sessions controller
-[] - impliment reviews model and have it below to users and bootcamps
+[] - figure out model relationships and impliment them along with the review and user models
+[] - figure out how to do user sessions
