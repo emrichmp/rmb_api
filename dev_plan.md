@@ -4,6 +4,6 @@
 - verification for user going to that bootcamp?
 
 ## To do
-[] - make update route work
+[X] - make update route work
 [] - impliment user sessions controller
 [] - impliment reviews model and have it below to users and bootcamps
