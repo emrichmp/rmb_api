@@ -37,12 +37,21 @@ router.patch('/:id', getBootcamp, async (req, res) => {
     if (req.body.name != null) {
         res.bootcamp.name = req.body.name
     }
-    if (req.body.date != null) {
-        res.bootcamp.date = req.body.date
+    if (req.body.yearEstablished != null) {
+        res.bootcamp.yearEstablished = req.body.yearEstablished
+    }
+    if (req.body.programType != null) {
+        res.bootcamp.programType = req.body.programType
+    }
+    if (req.body.programLength != null) {
+        res.bootcamp.programLength = req.body.programLength
+    }
+    if (req.body.averageRating != null) {
+        res.bootcamp.averageRating = req.body.averageRating
     }
     try {
         const updatedBootcamp = await res.bootcamp.save()
-        res.json(updatedBootcamp)
+        res.json({ updatedBootcamp, message: "Successfully Updated" })
     } catch (err) {
         res.status(400).json({ message: err.message})
     }

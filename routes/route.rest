@@ -21,9 +21,9 @@ Content-Type: application/json
 DELETE http://localhost:5000/bootcamps/6115983d624dc813c431a56f
 
 ###
-PATCH http://localhost:5000/bootcamps/6115983d624dc813c431a56f
+PATCH http://localhost:5000/bootcamps/6115d7919271f81d9c3a1ee5
 Content-Type: application/json
 
 {
-    "averageRating": 5
+    "averageRating": 10
 }
