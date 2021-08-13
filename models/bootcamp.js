@@ -19,6 +19,10 @@ const bootcampSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    courseOfferings: {
+        type: Object,
+        required: true
+    },
     averageRating: {
         //out of 10
         type: Number,
